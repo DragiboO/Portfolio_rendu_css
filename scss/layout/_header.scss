@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: $sub-color1;    
+    height: 5vh;
+
+    .menu {
+        font-size: 30px;
+
+        a {   
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .m1 {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+    }
+
+    
+    .m2 {
+        position: absolute;
+        right: 30%;
+        top: 10%;
+
+        @include xl {
+            right: 35%;
+        }
+
+        @include s {
+            right: 42%;
+        }
+    }
+    
+    .m3 {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+}

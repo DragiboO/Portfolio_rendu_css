@@ -4,4 +4,147 @@
   font-family: sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #12693e;
+  height: 5vh;
+}
+header .menu {
+  font-size: 30px;
+}
+header .menu a {
+  color: white;
+  text-decoration: none;
+}
+header .m1 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+header .m2 {
+  position: absolute;
+  right: 30%;
+  top: 10%;
+}
+@media screen and (max-width: 1200px) {
+  header .m2 {
+    right: 35%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .m2 {
+    right: 42%;
+  }
+}
+header .m3 {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+section {
+  background-color: #0f7944;
+  height: 100vh;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  section {
+    display: block;
+  }
+}
+section .title {
+  height: 100%;
+  background-color: #0f7944;
+  width: 50%;
+  font-size: 80px;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  section .title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+section .title div {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: yellowgreen;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1200px) {
+  section .title div {
+    position: initial;
+  }
+}
+section .presentation {
+  width: 50%;
+  height: 100%;
+  background-color: #0f7944;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  section .presentation {
+    width: 100%;
+  }
+}
+section .presentation .grid {
+  width: 450px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+section .presentation .grid .in_grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+section .presentation .grid .c1 {
+  background-color: #12693e;
+  font-size: 40px;
+  color: #83b387;
+  border: solid 2px white;
+}
+section .presentation .grid .c2 {
+  background-color: #195235;
+}
+section .presentation .grid .c3 {
+  background-color: #1a412d;
+}
+section .presentation .grid .c4 {
+  background-color: #195235;
+}
+section .presentation .grid .c5 {
+  background-color: #1a412d;
+}
+section .presentation .grid .c6 {
+  background-color: #195235;
+  border: solid 5px white;
+}
+section .presentation .grid .c7 {
+  background-color: #1a412d;
+  color: #83b387;
+  border: solid 3px white;
+}
+section .presentation .grid .c8 {
+  background-color: #195235;
+}
+section .presentation .grid .c9 {
+  background-color: #12693e;
+}
+
 /*# sourceMappingURL=style.css.map */

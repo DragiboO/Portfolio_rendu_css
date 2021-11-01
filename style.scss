@@ -7,4 +7,112 @@
 @import "scss/abstract/variables",
         "scss/abstract/mixins",
         "scss/components/buttons",
-        "scss/layout/header";
+        "scss/layout/header",
+        "scss/layout/footer";
+
+
+section {
+    background-color: $maincolor;
+    height: 100vh;
+    display: flex;
+
+    @include xl {
+        display: block;
+    }
+
+    .title {
+        height: 100%;
+        background-color: $maincolor;
+        width: 50%;
+        font-size: 80px;
+        position: relative;
+
+        @include xl {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            height: 0;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        div {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            color: yellowgreen;
+            text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+            @include xl {
+                position: initial;
+            }
+        }
+    }
+
+    .presentation {
+        width: 50%;
+        height: 100%;
+        background-color: $maincolor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include xl {
+            width: 100%;
+        }
+
+
+        .grid {
+            width: 450px;
+            height: 450px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+            .in_grid {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .c1 {
+                background-color: $sub-color1;
+                font-size: 40px;
+                color: rgb(131, 179, 135);
+                border: solid 2px rgb(255, 255, 255);
+            }
+            .c2 {
+                background-color: $sub-color2;
+            }
+            .c3 {
+                background-color: $sub-color3;
+            }
+            .c4 {
+                background-color: $sub-color2;
+            }
+            .c5 {
+                background-color: $sub-color3;
+            }
+            .c6 {
+                background-color: $sub-color2;
+                border: solid 5px rgb(255, 255, 255);
+            }
+            .c7 {
+                background-color: $sub-color3;
+                color: rgb(131, 179, 135);
+                border: solid 3px rgb(255, 255, 255);
+            }
+            .c8 {
+                background-color: $sub-color2;
+            }
+            .c9 {
+                background-color: $sub-color1;
+            }
+        }
+    }
+}
