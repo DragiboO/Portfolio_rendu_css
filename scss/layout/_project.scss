@@ -1,0 +1,79 @@
+.proj {
+    min-height: 80vh;
+    background-color: $maincolor;
+
+    .title {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 80px;
+        color: yellowgreen;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .proj_section {
+        display: flex;
+        flex-wrap: wrap;
+
+        .proj_desc {
+            width: 30%;
+            margin: 5%;
+            padding: 5%;
+            background-color: $sub-color1;
+            border-radius: 30px;
+            font-size: 20px;
+            color: white;
+
+            @include xl {
+                width: 80%;
+            }
+        }
+
+        .proj_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+
+            @include xl {
+                width: 100%;
+            }
+
+            img {
+                width: 80%;
+                object-fit: fill;
+
+                @include xl {
+                    height: 100%;
+                    width: 50%;
+                }
+            }
+        }
+        
+        .proj_img_yasuo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include xl {
+                width: 100%;
+            }
+
+            img {
+                width: 600px;
+                object-fit: fill;
+
+                @include xl {
+                    height: 100%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @include xl {
+        padding-bottom: 50px;
+    }
+}
