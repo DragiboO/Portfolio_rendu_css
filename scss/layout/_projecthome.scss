@@ -1,0 +1,50 @@
+.project {
+    padding-bottom: 15vh;
+    width: 100%;
+    background-color: $maincolor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        background-color: $sub-color2;
+        border-radius: 30px;
+        width: 80%;
+        padding: 5%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .card_part1 {
+
+            .card_text_title {
+                color: white;
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+
+            .card_text_desc {
+                color: rgb(196, 196, 196);
+                font-size: 20px;
+                padding-bottom: 50px;
+            }
+
+            .card_text_link {
+                color: white;
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .card_part2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 150px;
+                object-fit: fill;
+            }
+        }
+    }
+}
