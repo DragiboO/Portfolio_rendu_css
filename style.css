@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   position: relative;
   background-color: #12693e;
-  height: 5vh;
+  height: 10vh;
 }
 header .menu {
   font-size: 30px;
@@ -17,16 +17,22 @@ header .menu {
 header .menu a {
   color: white;
   text-decoration: none;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+header .menu a:hover {
+  transition: linear 0.2s;
+  font-size: 40px;
+  color: #1a412d;
 }
 header .m1 {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 30%;
 }
 header .m2 {
   position: absolute;
   right: 30%;
-  top: 10%;
+  top: 30%;
 }
 @media screen and (max-width: 1200px) {
   header .m2 {
@@ -41,7 +47,18 @@ header .m2 {
 header .m3 {
   position: absolute;
   right: 10%;
-  top: 10%;
+  top: 30%;
+}
+
+footer {
+  background-color: #12693e;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -105,6 +122,12 @@ section .presentation .grid {
   grid-template-rows: 1fr 1fr 1fr;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 500px) {
+  section .presentation .grid {
+    width: 345px;
+    height: 345px;
+  }
+}
 section .presentation .grid .in_grid {
   display: flex;
   align-items: center;
@@ -112,6 +135,16 @@ section .presentation .grid .in_grid {
   color: white;
   font-size: 20px;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+section .presentation .grid .in_grid:hover {
+  transition: linear 0.3s;
+  background-color: #0e2419;
+}
+section .presentation .grid .in_grid img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 section .presentation .grid .c1 {
   background-color: #12693e;
@@ -133,18 +166,64 @@ section .presentation .grid .c5 {
 }
 section .presentation .grid .c6 {
   background-color: #195235;
-  border: solid 5px white;
 }
 section .presentation .grid .c7 {
   background-color: #1a412d;
   color: #83b387;
   border: solid 3px white;
 }
+@media screen and (max-width: 500px) {
+  section .presentation .grid .c7 {
+    font-size: 16px;
+  }
+}
 section .presentation .grid .c8 {
   background-color: #195235;
 }
 section .presentation .grid .c9 {
   background-color: #12693e;
+}
+
+.project {
+  padding-bottom: 15vh;
+  width: 100%;
+  background-color: #0f7944;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project .card {
+  background-color: #195235;
+  border-radius: 30px;
+  width: 80%;
+  padding: 5%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project .card .card_part1 .card_text_title {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.project .card .card_part1 .card_text_desc {
+  color: #c4c4c4;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.project .card .card_part1 .card_text_link {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.project .card .card_part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project .card .card_part2 img {
+  height: 150px;
+  object-fit: fill;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     position: relative;
     background-color: $sub-color1;    
-    height: 5vh;
+    height: 10vh;
 
     .menu {
         font-size: 30px;
@@ -11,20 +11,27 @@ header {
         a {   
             color: white;
             text-decoration: none;
+            text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+            &:hover {
+                transition: linear 0.2s;
+                font-size: 40px;
+                color: $sub-color3;
+            }
         }
     }
 
     .m1 {
         position: absolute;
         left: 10%;
-        top: 10%;
+        top: 30%;
     }
 
     
     .m2 {
         position: absolute;
         right: 30%;
-        top: 10%;
+        top: 30%;
 
         @include xl {
             right: 35%;
@@ -38,6 +45,6 @@ header {
     .m3 {
         position: absolute;
         right: 10%;
-        top: 10%;
+        top: 30%;
     }
 }
